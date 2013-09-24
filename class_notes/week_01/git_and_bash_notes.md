@@ -3,11 +3,11 @@ Things to come back to:
 
 the following is an example of code highlighting in a language 
 
-``ruby
+```ruby
 10.times do
   puts "hi"
 end
-``
+```
 
 ## BASH 
 (aka Shell, Terminal, Command Line Prompt, Bash Prompt, Bash Shell):
