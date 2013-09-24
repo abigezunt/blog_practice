@@ -29,24 +29,24 @@ All commands are Unix programs
 
 ### Useful bash commands:
 
-* pwd (print working directory)
-* cd (change directory)
-    * cd .. (go up one level)
-       * NOTE: cd ../../.. means go up 3 levels
-    * cd . (current directory)
-    * cd / (go directly to root directory)
-    * cd (goes to your current logged-in user's home directory)
-* ls (list all the files and folders in the current directory)
-    * ls -a (list even the hidden files and folders)
-    * ls -al (lists all files in long form.)
+* `pwd` (print working directory)
+* `cd` (change directory)
+    * `cd ..` (go up one level)
+       * NOTE: `cd ../../..` means go up 3 levels
+    * `cd .` (current directory)
+    * `cd /` (go directly to root directory)
+    * `cd` (goes to your current logged-in user's home directory)
+* `ls` (list all the files and folders in the current directory)
+    * `ls -a` (list even the hidden files and folders)
+    * `ls -al` (lists all files in long form.)
         * permissions - # of files - owner - group owner - size in bits - date last 
         * modified - name of file
-    * ls .. (references one level up)
-* echo (print some arguments or the value of a variable)  
-    * echo $PATH (show your path variable) 
-* history: type history to see entire list or use arrow key up, 
-    * use !## to execute from history list
-* man (finds the manual page for a command (e.g. "man ls")) 
+    * `ls ..` (references one level up)
+* `echo` (print some arguments or the value of a variable)  
+    * `echo $PATH` (show your path variable) 
+* `history`: type history to see entire list or use arrow key up, 
+    * use `!`## to execute from history list
+* `man` (finds the manual page for a command (e.g. "man ls")) 
     * type "q" to quit the manual
 * ~ (references home directory (e.g. cd ~, ls ~, ls ~/Code))
 * less (viewing the content of a file from the command line)
