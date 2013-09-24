@@ -1,6 +1,14 @@
 Things to come back to:
 - Bash Profile customization
 
+the following is an example of code highlighting in a language 
+
+``ruby
+10.times do
+  puts "hi"
+end
+``
+
 ## BASH 
 (aka Shell, Terminal, Command Line Prompt, Bash Prompt, Bash Shell):
 
