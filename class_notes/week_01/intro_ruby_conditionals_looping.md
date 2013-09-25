@@ -1,13 +1,12 @@
-
 ###Post Quiz Review
 
-rspec spec (runs an internal automated quiz grading program)
+`rspec spec` (runs an internal automated quiz grading program)
 
 How to move a file from directory to directory:
-mv "Current directory"/"file" "new directory"
+`mv "Current directory"/"file" "new directory"`
 
-ls -R = shows all files in directory and sub directories (oh wow cool thanks)
-:qa to exit vim
+`ls -R` = shows all files in directory and sub directories (oh wow cool thanks)
+`:qa` to exit vim
 
 Conclusion: Ryan failed ( but loudly! :) (High five, Ryan!!) (Thk y ppl)
 
@@ -20,7 +19,7 @@ Conclusion: Ryan failed ( but loudly! :) (High five, Ryan!!) (Thk y ppl)
 ***Formatting in markdown:***
 
 remember: tab 4 spaces to make text look like code!
-putting `'s around a small snippet will turn it into code.
+putting \`'s around a small snippet will turn it into code.
 
 ***Notes***
 
@@ -33,7 +32,7 @@ Pro: Compiled languages are faster and are generally more memory-efficient
 Con: You have to finish your program and compile it before you can run it.
 
 *Interpreted Languages:*
-Pro: Interpreted languages are not noticeably slower on newer computers
+Pro: Interpreted languages are not noticeably slower on newer computers for most tasks
 Pro: Interpreted languages provide more instant feedback
 Pro: Shorter, easier code to write (e.g. you don't have to declare variables)
 Con: Uses memory less efficiently, programs run slower
@@ -44,7 +43,7 @@ ex. lisp
 *Query*
 ex. SQL (pronounced "sequel")
 
-*Advice From The David Fisher: Learn some more languages!*
+*Advice From The David Fisher: Learn some more languages! (eventually)*
 1.Interpreted - e.g. Ruby √
 2.C                      X
 3.Functional - e.g. Lisp  X
@@ -83,16 +82,16 @@ This means less code to do the same thing in another language: more efficient.
 ***Some of the Classes of Objects (kinds of info) in Ruby:***
 
 - Integers: Numbers! 
-  * 1, 2, 3, 4, 5, 326
+  * `1`, `2`, `3`, `4`, `5`, `326`
 - Floats: Decimals!
-  * 1.6, 3.7, 13.1, 26.2
+  * `1.6`, `3.7`, `13.1`, `26.2`
 - String: A sequence of characters, can be a variable or a constant
-  * "Apple Cider" 'Pear Cider'
+  * `"Apple Cider"` `'Pear Cider'`
   * single quotes: are whatever's in them (which is badass)
   * double quotes: have more power
-  * String interpolation: "Inside a string, print something that is  #{not-a-string}."
-- Boolean: get true/false as return values
-  * Boolean operators: < > <= >= == !=
+  * String interpolation: `"Inside a string, print something that is  #{not-a-string}."`
+- Boolean: get `true`/`false` as return values
+  * Boolean operators: `<` `>` `<=` `>=` `==` `!=`
 - Variables: by convention, we use lower-case and underscores for multi-word-variable names.
   * `=` is the assignment operator.  It assigns a value to a variable.
   * passing by value means that when a variable is assigned it is assigned to the original object/value and not the contingent variable  (see example of passing by value below)
@@ -108,19 +107,19 @@ Example of passing by value:
 ```
 
 * Snake case: underscore between words of variable names. We're okay with longer names.
-    Ex) this_is_an_example_of_snake_case = "yep"
-* Camel case: ThisIsCamelCase. We use this to name Classes and Modules; Ruby will let you use it for variables but by convention we don't.
-- Constants: ALL_CAPS
+    Ex) `this_is_an_example_of_snake_case = "yep"`
+* Camel case: `ThisIsCamelCase`. We use this to name Classes and Modules; Ruby will let you use it for variables but by convention we don't.
+- Constants: `ALL_CAPS`
   * Set once and never chance in program.
   * Ruby does not enforce the all-caps convention but it's good. 
   * Ruby will allow you to change the value of a constant, but it gives you a warning.
 
 How do you find what kind of data your thing is?  Use the .class method:
-    2.class
+    `2.class`
     => fixnum
-    "apple".class
+    `"apple".class`
     => string
-    1.0.class
+    `1.0.class`
     => float
     
 How do you find out the parent class(es) of an object's class?
@@ -129,17 +128,17 @@ How do you find out the parent class(es) of an object's class?
 ***Math!***
 
 - Integer Division: (`/`) always rounds down.
-  * e.g. 10 / 4 = 2
+  * e.g. `10 / 4 = 2`
   * If you use integers, Ruby will return an integer.
 - Float Division: If you use a float in the input, then the output will be a float as well.
 - Modulo (`%`) : returns the remainder of division
-  * e.g. 10 % 4 ("ten modulo four") = 2 because the ten divides by four twice with two left over.
-- Exponents: e.g. 4 ** 2 ("four squared") = 16
+  * e.g. `10 % 4` ("ten modulo four") returns 2 because the ten divides by four twice with two left over.
+- Exponents: e.g. `4 ** 2` ("four squared") = 16
 - Repeating decimals stop at 20 digits, module bigdecimal can be used to store more digits
-- Increment `+=` and `-=` (a= 10, a += 1, a = 11) a +=1 is shorthand for a = a + 1
-- Concatenate: "grape" + "fruit" = "grapefruit"
+- Increment `+=` and `-=` (a= 10, a += 1, a = 11) a +=1 is shorthand for `a = a + 1`
+- Concatenate: `"grape" + "fruit" = "grapefruit"`
   * `+` is a method you can call on strings and floats and integers, defined separately within each class probably
-  * "grape" << "fruit" = "grapefruit"
+  * `"grape" << "fruit" = "grapefruit"`
 
 Boolean operators:
 
@@ -188,7 +187,7 @@ _What is the deal with `gets.chomp`?_
 
 These statements return booleans.
 
-&& means and 
+`&&` means `and`
     returns true only when both sides are true
     [5] pry(main)> (1 < 3) && (4 < 5)
 || mean or
@@ -235,7 +234,7 @@ case (or switch statement): another way of writing if...elsif
 
 ***LOOPS***
 - control structure. intended to repeat over something
-- 'while' loop: does thing while a condition is true
+- `while` loop: does thing while a condition is true
     `# This is an infinite loop         /n
     while true                          /n
         puts "do this thing forever"    /n
