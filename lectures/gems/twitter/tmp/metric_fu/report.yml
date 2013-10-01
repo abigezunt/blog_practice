@@ -1,0 +1,35 @@
+---
+:cane:
+  :total_violations: 1
+  :violations:
+    :documentation:
+    - :description: No README found
+:churn:
+  :changes: []
+  :class_churn: []
+  :method_churn: []
+  :changed_files:
+  - lectures/deck_cards/deck_of_cards.rb
+  :changed_classes: []
+  :changed_methods: []
+:flay:
+  :total_score: '0'
+  :matches: []
+:flog:
+  :total: 0
+  :average: 0
+  :method_containers: []
+:roodi:
+  :total:
+  - Found 0 errors.
+  :problems: []
+:reek:
+  :matches: []
+:saikuro:
+  :files: []
+  :classes: []
+  :methods: []
+:hotspots:
+  files: []
+  classes: []
+  methods: []
