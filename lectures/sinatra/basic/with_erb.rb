@@ -3,7 +3,18 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 
 get '/' do
-	"Hello Index!"
+	# this is inaccessible in the view
+	something = "foo"
+	@title = "Root"
+	# This is accessible in the view
+	@message = "Hello Index!"
+	erb :hello
+end
+
+get '/colors' do
+	@title = "Colors are pretty"
+	@colors = ['red', 'green', 'blue']
+	erb :colors
 end
 
 get '/hi' do
