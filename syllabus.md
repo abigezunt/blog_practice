@@ -6,18 +6,16 @@ This course syllabus provides a general outline for the lessons we will be teach
 ###(no class)
 ##Tuesday (10/15/13)
 
-###Introduction to Rails (David)
-
-###all day:
+###All day(David,Tom):
 
 Introduction to Rails
     
-###homework:
+###Homework:
 
 twitter stock product in rails
 
 ##Wednesday (10/16/13)
-###morning:
+###Morning:
 
 form_for, link_tag, img_tags and paths in rails (passing parameters)
 
@@ -29,34 +27,34 @@ ActiveRecord in Rails
 
 Models and validation
 
-###homework:
+###Homework:
 ##Thursday (10/17/13)
-###morning:
+###Morning (David):
 
 Associations in ActiveRecord (has_many, belongs_to) (David)
 
-###afternoon:
+###afternoon (David):
 
 Rails helpers
 
 Controllers (using models to break apart code)
 
 
-###homework:
+###Homework:
 ##Friday (10/18/13)
 
-###morning:
+###Morning (David):
 
 Advanced associations in ActiveRecord (has_and_belongs_to_many) (David)
 
-###afternoon:
+###afternoon (David):
 
 Deployment with Heroku
 
 Requirements for the first project
 
 
-###homework:
+###Homework:
 
 Begin the project over the weekend. 
 
@@ -65,10 +63,10 @@ Begin the project over the weekend.
 
 ##Monday (10/21/13)
 
-###morning:
+###Morning (Tom):
 
 user authentication using bcrypt 
 
-###afternoon: 
+###afternoon (Teddy): 
 
 user authentication using devise
