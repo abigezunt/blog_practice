@@ -6,7 +6,7 @@ This course syllabus provides a general outline for the lessons we will be teach
 ###(no class)
 ##Tuesday (10/15/13)
 
-###All day(David,Tom):
+###All day (David,Tom):
 
 Introduction to Rails
     
@@ -15,11 +15,11 @@ Introduction to Rails
 twitter stock product in rails
 
 ##Wednesday (10/16/13)
-###Morning:
+###Morning (Tom):
 
 form_for, link_tag, img_tags and paths in rails (passing parameters)
 
-###afternoon:
+###afternoon (David):
 
 Database Migrations
 
@@ -33,7 +33,7 @@ Models and validation
 
 Associations in ActiveRecord (has_many, belongs_to) (David)
 
-###afternoon (David):
+###afternoon (Tom):
 
 Rails helpers
 
@@ -47,7 +47,7 @@ Controllers (using models to break apart code)
 
 Advanced associations in ActiveRecord (has_and_belongs_to_many) (David)
 
-###afternoon (David):
+###afternoon (Teddy):
 
 Deployment with Heroku
 
