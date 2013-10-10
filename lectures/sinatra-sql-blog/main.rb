@@ -16,6 +16,12 @@ get '/posts' do
 	erb :post_index
 end
 
+post '/posts/:id/delete' do
+	post_id = params[:id]
+	query("DELETE FROM blog WHERE id=#{post_id}")
+	redirect '/posts'
+end
+
 get '/posts/:id' do
 	post_id = params[:id]
 	@post = query("SELECT * FROM blog WHERE id = #{post_id} LIMIT 1").first
@@ -30,3 +36,4 @@ end
 post '/posts/create' do
 	# I'll need something here to create a post
 end
+
