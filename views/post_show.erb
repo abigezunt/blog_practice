@@ -1,6 +1,5 @@
 <div class="post-container">
-	<a href="/posts><h2><%= @post["title"] %> </h2></a>
+	<a href="/posts/<%=@post["id"]%>"><h2><%= @post["title"] %> </h2></a>
 	<div class="post-body"><%= @post["body"] %></div>
-	<%= @post["created_at"] %>
-	<% end %>
+
 </div>

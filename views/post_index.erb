@@ -3,8 +3,8 @@
 	<a href="/posts/<%=post["id"]%>"><h2><%= post["title"] %> </h2></a>
 	<div class="post-body"><%= post["body"] %></div>
 	<%= post["created_at"] %>
-
-	<form action="/posts/<%= post["id"] %>/delete" method="delete">
+	<a href="/posts/<%=post["id"]%>/edit">Edit Post</a>
+	<form action="/posts/<%= post["id"] %>/delete" method="post">
 	<input type="submit" name="delete post" value="delete" />
 	</form>
 	<% end %>
