@@ -18,7 +18,7 @@ end
 
 get '/posts/:id' do
 	post_id = params[:id]
-	@post = query("SELECT * FROM blog WHERE id = #{post_id} LIMIT 1")
+	@post = query("SELECT * FROM blog WHERE id = #{post_id} LIMIT 1").first
 	erb :post_show
 end
 
