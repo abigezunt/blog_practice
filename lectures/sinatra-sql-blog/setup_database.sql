@@ -1,0 +1,8 @@
+DROP TABLE blog;
+CREATE TABLE blog
+(
+	id SERIAL4 PRIMARY KEY,
+	title TEXT,
+	body TEXT,
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
