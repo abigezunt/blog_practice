@@ -4,7 +4,7 @@ require 'sinatra/reloader' if development?
 require 'pg'
 
 configure do
-	CONN = PG.connect(db_name: 'ga-class', host: 'localhost')
+	CONN = PG.connect(dbname: 'blog', host: 'localhost')
 end
 
 def query(sql)
@@ -17,14 +17,18 @@ get '/posts' do
 end
 
 get '/posts/:id' do
-  @post = query("SELECT * FROM blog where id = #{params[:id]} LIMIT 1")
+  @post = query("SELECT * FROM blog where id = #{params[:id]} LIMIT 1").first
   erb :post_show
+end
+
+delete '/posts/:id/delete' do
 end
 
 get '/posts/new' do
 
   erb :post_new
 end
+
 
 post '/posts/create' do
   
